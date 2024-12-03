@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)", // ใช้ CSS Variable
+        foreground: "var(--foreground)", // ใช้ CSS Variable
+        primary: "#FF5733",
+        secondary: "#DEDEDE",
+        accent: "", 
+        neutral: "",
       },
     },
   },

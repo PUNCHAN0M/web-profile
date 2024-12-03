@@ -7,15 +7,57 @@
   --foreground: #171717;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh; /* ให้ body ยืดเต็มหน้าจอ */
+  background: linear-gradient(to bottom, black, #571108);
+  background-repeat: no-repeat; /* ไม่ให้ gradient ซ้ำ */
+  background-size: cover; /* ปรับ gradient ให้ครอบคลุมทั้งเนื้อหา */
+  color: white;
+}
+
+.card {
+  width: 300px; /* Adjust as needed */
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.card-image {
+  height: 200px; /* Adjust as needed */
+  background-size: cover;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  margin: 0;
+ line-height: 1.5;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  justify-content: center; /* Center cards when they fit */
+  padding: 20px;
+  scroll-snap-type: x mandatory; /* Optional: for smooth scrolling */
+}
+
+.card {
+  scroll-snap-align: start; /* Optional: for smooth scrolling */
 }
