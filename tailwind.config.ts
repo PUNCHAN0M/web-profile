@@ -9,12 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)", // ใช้ CSS Variable
-        foreground: "var(--foreground)", // ใช้ CSS Variable
+        background: "var(--background)", // Use CSS Variable
+        foreground: "var(--foreground)", // Use CSS Variable
         primary: "#FF5733",
         secondary: "#DEDEDE",
-        accent: "", 
-        neutral: "",
+        accent: "#FF7043", // Example: Set a value for accent color (or leave empty if unnecessary)
+        neutral: "#9E9E9E", // Example: Set a value for neutral color (or leave empty if unnecessary)
+      },
+      fontFamily: {
+        Antonio: ["Antonio", "sans-serif"], // Fixed the font-family extension
       },
     },
   },

@@ -1,35 +1,37 @@
 "use client";
 import React from "react";
 
-interface cardComponent {
-  title: string;
+interface CardItemProps {
   image: string;
+  title: string;
   description: string;
 }
 
-interface cardComponentProps {
-  items: cardComponent[];
+interface CardComponentProps {
+  items: CardItemProps[];
 }
 
-const cardComponent: React.FC<cardComponentProps> = ({ items }) => {
+const CardComponent: React.FC<CardComponentProps> = ({ items }) => {
   return (
-    <div className="bg-red-300 flex justify-center " >
+    <div className="flex flex-wrap justify-center gap-8 p-6">
       {items.map((item, index) => (
         <div
           key={index}
-          className="bg-secondary text-black rounded-xl flex flex-col space-y-[5%] p-[1%] "
-          style={{backgroundColor:"",margin:5,width:"400px",height:"600px"}}
+          className="bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden flex flex-col sm:flex-row w-full sm:w-[90%] lg:w-[45%] 2xl:w-[40%] transition-transform transform hover:scale-105"
         >
-          <div className="bg-red-600 mx-[3%] ">
-            <div className="">{item.title}asdasd</div>
+          {/* Image Section */}
+          <div className="relative w-full sm:w-1/3">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="object-cover w-full h-full aspect-[16/9]"
+            />
           </div>
-          <img
-            className="mx-[3%] border-primary border-[10px]"
-            alt={""}
-            src={item.image}            
-          />
-          <div className="mx-[3%] bg-red-500 overflow-hidden">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, eum molestiae. Quia laborum et quam maxime odit, soluta distinctio, similiquasxcdjkdhhhhhjkdasasjkdhasjkhasdjkhasjkhjkhasdLore Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque praesentium iure enim quas iusto porro similique nam voluptatum corporis ratione nostrum qui libero, quam, quod veritatis ducimus quae doloremque!e ipsam vel, eum esse facere. Vero dicta adipisci harum? Sunt.
+
+          {/* Content Section */}
+          <div className="p-4 flex flex-col justify-center">
+            <h3 className="font-semibold text-lg text-gray-800 mb-2">{item.title}</h3>
+            <p className="text-sm text-gray-600">{item.description}</p>
           </div>
         </div>
       ))}
@@ -37,4 +39,4 @@ const cardComponent: React.FC<cardComponentProps> = ({ items }) => {
   );
 };
 
-export default cardComponent;
+export default CardComponent;
