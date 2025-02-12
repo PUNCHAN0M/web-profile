@@ -77,7 +77,7 @@ export const cardIcon = [
     },
     {
       title: "LinkedIn : ",
-      link:"https://github.com/PUNCHAN0M",
+      link:"https://www.linkedin.com/in/pavananon-phanich-054320339/",
       image: "linkedin",
     },
     // Add more items as needed

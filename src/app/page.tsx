@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import CardComponent from "./_components/cardComponent";
-import Profile from "@/app/assets/profile.png";
-import Protrate from "@/app/assets/protrate.jpg";
+import Profile from "@/app/assets/profile.jpg";
+import Protrate1 from "@/app/assets/protrate1.png";
+import Protrate2 from "@/app/assets/protrate2.png";
+
 import CardIconComponent from "./_components/cardIconComponent";
 import { cardIcon, cardItems, cardLang, contextIcons } from "./data";
 import CardList from "./_components/CardList";
@@ -155,7 +157,9 @@ export default function Index(): JSX.Element {
         {/* Profile */}
         <div className="flex lg:flex-row flex-col justify-center items-center w-full h-[92vh]">
           <div className="text-center lg:text-left flex flex-col items-end">
-            <div className="text-[4vh] lg:text-[3vh] xl:text-[5vh]">PAVANANON PHANICH</div>
+            <div className="text-[4vh] lg:text-[3vh] xl:text-[5vh]">
+              PAVANANON PHANICH
+            </div>
             <div>Live in Songkhla</div>
           </div>
 
@@ -174,14 +178,46 @@ export default function Index(): JSX.Element {
         {/* About Me */}
         <div id="aboutMe" className="flex flex-col justify-center items-center">
           <div className="text-[4vh]">About me ?</div>
-          <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 p-4">
-            <div className="bg-primary rounded-xl col-span-2 h-[40vh] order-last xl:order-first">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+          <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 p-4  justify-center items-center">
+            <div className="flex bg-primary rounded-xl col-span-2 h-auto xl:h-[40vh] order-last xl:order-first p-8 xl:p-14 text-wrap justify-center items-center text-white shadow-lg">
+              <span className="text-start text-base md:text-lg lg:text-2xl leading-relaxed tracking-wide max-w-3xl">
+                Hello, I'm{" "}
+                <span className="font-semibold">Pavananon Phanich</span>,
+                studying <br className="hidden md:inline" />
+                <br className="hidden md:inline" />
+                <span className="font-semibold">
+                  Artificial Intelligence Engineering
+                </span>
+                . I have
+                <span className="font-semibold">
+                  {" "}
+                  3 years of coding experience
+                </span>
+                , primarily <br className="hidden md:inline" />
+                using <span className="font-semibold">Python</span> for my
+                studies and work in AI and Image Processing.{" "}
+                <br className="hidden md:inline" />I also work with{" "}
+                <span className="font-semibold">TypeScript and JavaScript</span>{" "}
+                for website development, <br className="hidden md:inline" />
+                as my projects involve{" "}
+                <span className="font-semibold">
+                  React, React Native, and Next.js
+                </span>
+                , <br className="hidden md:inline" />
+                which I use extensively. I am deeply passionate about IT and
+                eager to learn. <br className="hidden md:inline" />
+                This drives my decision to seek internships in{" "}
+                <span className="font-semibold">
+                  challenging environments
+                </span>{" "}
+                <br className="hidden md:inline" />
+                where I can enhance my professional skills and grow.
+              </span>
             </div>
+
             <div className="bg-secondary col-span-1">
               <Image
-                src={Protrate}
+                src={Protrate1}
                 alt="Protrate Image"
                 className="object-cover"
               />
@@ -195,17 +231,20 @@ export default function Index(): JSX.Element {
           className="flex flex-col justify-center items-center"
         >
           <div className="text-[4vh]">Education ?</div>
-          <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 p-4">
+          <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 p-4 justify-center items-center">
             <div className="bg-secondary col-span-1">
               <Image
-                src={Protrate}
+                src={Protrate2}
                 alt="Protrate Image"
                 className="object-cover"
               />
             </div>
-            <div className="bg-primary rounded-xl col-span-2 h-[40vh]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+            <div className="flex bg-primary rounded-xl col-span-2 h-auto xl:h-[25vh] order-first xl:order-last p-10 xl:p-16 text-wrap justify-center items-center text-white shadow-lg">
+              <span className="text-start text-lg md:text-xl lg:text-3xl leading-loose tracking-wide max-w-3xl">
+                Prince of Songkla University [ 2022 - 2024 ] <br />
+                Bachelor of Engineering Program in Artificial Intelligence
+                Engineering
+              </span>
             </div>
           </div>
         </div>
@@ -229,7 +268,9 @@ export default function Index(): JSX.Element {
           <div className="text-[4vh]">Skill</div>
           <div className="lg:text-[4vh] text-[2vh]">Programming Language</div>
           <CardIconComponent items={cardLang} />
-          <div className="lg:text-[4vh] text-[2vh]">Machine Learning / Computer Vision</div>
+          <div className="lg:text-[4vh] text-[2vh]">
+            Machine Learning / Computer Vision
+          </div>
           <CardIconComponent items={cardIcon} />
         </div>
 
