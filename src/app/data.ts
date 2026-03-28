@@ -245,7 +245,7 @@ export type WorkExperienceItem = {
 
 export type ContactItem = {
   title: string;
-  image: "phone" | "email" | "github" | "linkedin";
+  image: "phone" | "email" | "github" | "linkedin" | "instagram" | "facebook";
   value: string;
   href?: string;
 };
@@ -393,6 +393,18 @@ export const contactItems: ContactItem[] = [
     image: "linkedin",
     value: "pavananon-phanich-054320339",
     href: "https://www.linkedin.com/in/pavananon-phanich-054320339/",
+  },
+  {
+    title: "Instagram",
+    image: "instagram",
+    value: "pvn.ig",
+    href: "https://www.instagram.com/pvn.ig/",
+  },
+  {
+    title: "Facebook",
+    image: "facebook",
+    value: "pavananon.phanich.3",
+    href: "https://www.facebook.com/pavananon.phanich.3",
   },
 ];
   
