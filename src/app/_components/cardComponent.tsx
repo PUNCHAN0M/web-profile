@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 interface CardItemProps {
@@ -21,7 +22,7 @@ const CardComponent: React.FC<CardComponentProps> = ({ items }) => {
         >
           {/* Image Section */}
           <div className="relative w-full sm:w-1/3">
-            <img
+            <Image 
               src={item.image}
               alt={item.title}
               className="object-cover w-full h-full aspect-[16/9]"

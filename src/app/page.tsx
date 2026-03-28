@@ -181,7 +181,7 @@ export default function Index(): JSX.Element {
           <div className="grid xl:grid-cols-3 grid-cols-1 gap-4 p-4  justify-center items-center">
             <div className="flex bg-primary rounded-xl col-span-2 h-auto xl:h-[40vh] order-last xl:order-first p-8 xl:p-14 text-wrap justify-center items-center text-white shadow-lg">
               <span className="text-start text-base md:text-lg lg:text-2xl leading-relaxed tracking-wide max-w-3xl">
-                Hello, I'm{" "}
+                Hello, I<p>&aposm</p>{" "}
                 <span className="font-semibold">Pavananon Phanich</span>,
                 studying <br className="hidden md:inline" />
                 <br className="hidden md:inline" />
