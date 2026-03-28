@@ -4,18 +4,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0d0d0d;
+  --foreground: #f8f8f8;
+  --orange-1: #ff6a00;
+  --orange-2: #ff8c1a;
+  --orange-3: #ffb347;
 }
 
 body {
   padding: 0;
   margin: 0;
-  min-height: 100vh; /* ให้ body ยืดเต็มหน้าจอ */
-  background: linear-gradient(to bottom, black, #571108);
-  background-repeat: no-repeat; /* ไม่ให้ gradient ซ้ำ */
-  background-size: cover; /* ปรับ gradient ให้ครอบคลุมทั้งเนื้อหา */
-  color: white;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 106, 0, 0.25), transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(255, 140, 26, 0.18), transparent 30%),
+    radial-gradient(circle at 30% 85%, rgba(255, 179, 71, 0.14), transparent 35%),
+    linear-gradient(155deg, #050505 0%, #111111 48%, #1c0f05 100%);
+  background-attachment: fixed;
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(255, 140, 26, 0.35);
+  color: #fff;
 }
 
 .card {
