@@ -23,6 +23,8 @@ const CardIconComponent: React.FC<CardIconComponentProps> = ({ items }) => {
             className="border-4 border-gray-200 rounded-full mb-2 object-cover 2xl:w-[10vw] 2xl:h-[10vw] w-[15vw] h-[15vw]"
             alt={item.title}
             src={item.image}
+              width={200}
+              height={200}
           />
           <div className="text-center xl:text-[3vh] md:text-[2vh] text-[10px] font-semibold">{item.title}</div>
         </div>

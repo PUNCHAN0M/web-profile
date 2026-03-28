@@ -25,6 +25,8 @@ const CardComponent: React.FC<CardComponentProps> = ({ items }) => {
             <Image 
               src={item.image}
               alt={item.title}
+                width={300}
+                height={200}
               className="object-cover w-full h-full aspect-[16/9]"
             />
           </div>
