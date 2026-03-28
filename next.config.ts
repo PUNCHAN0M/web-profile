@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['gammaco.com', 'encrypted-tbn0.gstatic.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'gammaco.com',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
