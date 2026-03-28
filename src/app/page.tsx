@@ -10,7 +10,7 @@ import CardIconComponent from "./_components/cardIconComponent";
 import { cardIcon, cardItems, cardLang, contextIcons } from "./data";
 import CardList from "./_components/CardList";
 
-export default function Index(): JSX.Element {
+export default function Index(): React.JSX.Element {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const scrollToSection = (id: string) => {

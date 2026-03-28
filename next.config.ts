@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: 'gammaco.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com',
+        pathname: '/**',
+      },
     ],
   },
 };
