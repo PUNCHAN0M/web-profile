@@ -346,6 +346,38 @@ export const webApplicationSkills: SkillItem[] = [
       },
     image: "/assets/postman.png",
   },
+  {
+    title: "Nestjs",
+    description: {
+        en: "Intermediate",
+        th: "มีประสบการณ์ใช้งาน",
+      },
+    image: "/assets/Nestjs.png",
+  },
+  {
+    title: "Superbase",
+    description: {
+        en: "Intermediate",
+        th: "มีประสบการณ์ใช้งาน",
+      },
+    image: "/assets/Superbase.png",
+  },
+  {
+    title: "Flask",
+    description: {
+        en: "Intermediate",
+        th: "มีประสบการณ์ใช้งาน",
+      },
+    image: "/assets/Flask.png",
+  },
+  {
+    title: "FastAPI",
+    description: {
+        en: "Intermediate",
+        th: "มีประสบการณ์ใช้งาน",
+      },
+    image: "/assets/fastapi.png",
+  },
 ];
 
 export const skillGroups: SkillGroup[] = [
